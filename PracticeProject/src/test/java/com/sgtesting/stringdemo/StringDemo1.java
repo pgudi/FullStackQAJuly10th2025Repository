@@ -14,7 +14,7 @@ public class StringDemo1 {
         splitString();
     }
 
-    private static void lowercase()
+    public static void lowercase()
     {
         String s="WELCOME";
         String s1=s.toLowerCase();
@@ -134,3 +134,5 @@ public class StringDemo1 {
         System.out.println("+++++++++++++++++++++");
     }
 }
+
+
