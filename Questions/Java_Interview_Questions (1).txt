@@ -1,0 +1,41 @@
+Java Interview Questions:
+---------------------------
+1. What is constructor?
+2. Explain Constructor Overloading?
+3. Explain Encapsulation concept?
+4. Difference between call by value and Call by Reference?
+5. Difference between final and Finally keywords?
+6. Difference between throw and throws in EXception handling?
+7. Difference between StringBuffer and StringBuilder?
+8. Difference between Checked Exception and UnChecked EXception?
+9. Difference between List and Set interfaces?
+10. Difference between HashMap and TreeMap?
+11. Explain Outer class and Inner class concept?
+12. Explain possible approaches of Execution of Static Block?
+13. Expalin Abstract class and its specific features?
+14. Explain Interface and its specific features?
+15. Difference between Byte Stream and Character Stream?
+16. Expalin the Polymorphism concept?
+17. Expalin Singleton design Pattern?
+18. Describe the Debug process in Eclipse?
+19. Explain Method Override concept?
+20. Explain Method overlaoding?
+21. Explain marker interface ?
+22. List out the interfaces you have used in Core Java?
+23. List out the Abstract classes you have used in Core Java?
+24. Explain the different types of the inheritance?
+25. Difference between IS-A relationship and Has-A Relationship
+26. Explain Multi Threading concept in core Java?
+27. Difference between Queue and Stack in Java.util?
+28. How to return an object or an instance from a method?
+29. How to do casting? Explain some casting scenario you have done in Core Java?
+30. List out some common Exception classes you have experienced in Core Java?
+31. Difference Between Abstract class and Interface in Core Java
+32. Describe Singleton concept in Core Java?
+33. Describe interface in terms of Java 8 Level?
+34. what is encapsulation concept in Java?
+35. List out Exception classes available in Core Java?
+36. Describe Constant Pool in Memory for String Literals?
+37. Describe Serialization and DeSerialization concept in Java?
+
+
