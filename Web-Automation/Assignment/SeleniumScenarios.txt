@@ -1,0 +1,16 @@
+Basic Scenarios:
+1) launchBrowser -> Navigate -> login -> createUser -> DeleteUser -> logout -> closeApplication
+2) launchBrowser -> Navigate -> login -> createUser -> modifyUser -> DeleteUser ->  logout -> closeApplication
+3) launchBrowser -> Navigate -> login -> createCustomer -> DeleteCustomer -> logout -> closeApplication
+4) launchBrowser -> Navigate -> login -> createCustomer -> modifyCustoemr -> DeleteCustomer -> logout -> closeApplication
+5) launchBrowser -> Navigate -> login -> createCustomer -> createProject -> deleteProject -> DeleteCustomer -> logout -> closeApplication
+6) launchBrowser -> Navigate -> login -> createCustomer -> createProject -> modifyProject -> deleteProject -> DeleteCustomer -> logout -> closeApplication
+7) launchBrowser -> Navigate -> login -> createCustomer -> createProject -> createTasks -> deleteTasks -> deleteProject -> DeleteCustomer -> logout -> closeApplication
+8) launchBrowser -> Navigate -> login -> importTasks -> deleteTasks -> deleteProject -> DeleteCustomer -> logout -> closeApplication
+
+Advanced Scenarios:
+1) launchBrowser -> Navigate -> login -> createUser user1 -> logout -> login as user1 -> createuser user2 -> logout -> login as user2 -> createUSer user3 -> logout -> login as user3 -> logout -> login as Admin -> modifyUser password user1 -> logout as Admin -> login as user1 with new pwd -> modifyUser password user2 -> logout as user1 -> login as user2 with new pwd
+ -> modifyUser password user3 -> logout as user2 -> login as user3 with new pwd -> logout as user3 -> login as user2 -> delete User3 -> logout -> login as user1 -> delete User2 ->logout as user1 -> login as admin -> delete User1 -> logout ->closeApplication
+
+2) launchBrowser -> Navigate -> login -> createUser user1,user2,user3 ->
+logout as Admin -> login as User1 -> logout as user1 -> login as user2 -> logout as user2 -> login as user3 -> logout as user3 -> login as Admin -> modify passsword for user1,user2,user3 -> logout as admin -> login as User1 with new pwd -> logout as user1 -> login as user2 with new pwd -> logout as user2 -> login as user3 with new pwd -> logout as user3 -> login as Admin -> delete User1, User2, User3 -> logout -> closeApplication
