@@ -3,10 +3,9 @@ package com.sgtesting.tests;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class CreateUserScenario {
+public class CreateUserScenarioByFirefox {
     private static WebDriver oBrowser=null;
     public static void main(String[] args) {
         launchBrowser();
@@ -23,7 +22,7 @@ public class CreateUserScenario {
     {
         try
         {
-            oBrowser = new ChromeDriver();
+            oBrowser = new FirefoxDriver();
         }catch (Exception e)
         {
             e.printStackTrace();
@@ -80,8 +79,8 @@ public class CreateUserScenario {
             oBrowser.findElement(By.id("userDataLightBox_lastNameField")).sendKeys("User1");
             oBrowser.findElement(By.name("email")).sendKeys("demo@gmail.com");
             oBrowser.findElement(By.id("userDataLightBox_usernameField")).sendKeys("demoUser1");
-            oBrowser.findElement(By.name("password")).sendKeys("1234");
-            oBrowser.findElement(By.id("userDataLightBox_passwordCopyField")).sendKeys("1234");
+            oBrowser.findElement(By.name("password")).sendKeys("WelcomeDemo@123$");
+            oBrowser.findElement(By.id("userDataLightBox_passwordCopyField")).sendKeys("WelcomeDemo@123$");
             oBrowser.findElement(By.xpath("//span[normalize-space()='Create User']")).click();
             Thread.sleep(4000);
         }catch (Exception e)
