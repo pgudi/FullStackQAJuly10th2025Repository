@@ -8,6 +8,38 @@
     </test>
 
     <test name="products testcases">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <packages>
             <package name="com.sgtesting.products"></package>
         </packages>

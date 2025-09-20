@@ -11,7 +11,6 @@ public class WithWebElementDemo {
         launchBrowser();
         navigateURL();
         login();
-
     }
 
     private static void launchBrowser()

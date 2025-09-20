@@ -2,6 +2,7 @@ package com.sgtesting.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginLogoutDemo {
@@ -42,6 +43,8 @@ public class LoginLogoutDemo {
     {
         try
         {
+//            WebElement oUsername=oBrowser.findElement(By.id("username"));
+//            oUsername.sendKeys("admin");
             oBrowser.findElement(By.xpath("//input[@id='username']")).sendKeys("admin");
             oBrowser.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("manager");
             oBrowser.findElement(By.cssSelector("a[id='loginButton'] div")).click();
