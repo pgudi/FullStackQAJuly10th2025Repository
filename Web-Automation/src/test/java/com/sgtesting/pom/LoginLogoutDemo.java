@@ -1,6 +1,7 @@
 package com.sgtesting.pom;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LoginLogoutDemo {
@@ -18,7 +19,8 @@ public class LoginLogoutDemo {
     {
         try
         {
-            oBrowser=new FirefoxDriver();
+           // oBrowser=new FirefoxDriver();
+            oBrowser=new ChromeDriver();
             oPage = new ActiPage(oBrowser);
         }catch(Exception e)
         {
