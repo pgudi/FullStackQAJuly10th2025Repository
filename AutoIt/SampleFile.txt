@@ -1,0 +1,2 @@
+Welcome to AutoIt tool , It is used for Windows Automation
+This tool used Basic Language for Writing testcases 
