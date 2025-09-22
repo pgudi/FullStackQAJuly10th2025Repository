@@ -1,0 +1,1 @@
+MsgBox(1,"Example Dialog window","It is for Testing Purpose")
