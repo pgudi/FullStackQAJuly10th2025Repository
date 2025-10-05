@@ -1,0 +1,39 @@
+[INFO ] 2025-10-05 12:20:36.734 [main] BDD Automation - I launch chrome Browser
+[INFO ] 2025-10-05 12:20:38.601 [main] BDD Automation - I navigate application url
+[INFO ] 2025-10-05 12:20:46.256 [main] BDD Automation - I close chrome browser
+[INFO ] 2025-10-05 12:20:46.581 [main] BDD Automation - I launch chrome Browser
+[INFO ] 2025-10-05 12:20:48.696 [main] BDD Automation - I navigate application url
+[INFO ] 2025-10-05 12:20:54.714 [main] BDD Automation - I find the login Page
+[INFO ] 2025-10-05 12:20:54.742 [main] BDD Automation - I enter username in username text field
+[INFO ] 2025-10-05 12:20:54.830 [main] BDD Automation - I enter password in password text field
+[INFO ] 2025-10-05 12:20:54.926 [main] BDD Automation - I click on Login Button in login page
+[INFO ] 2025-10-05 12:20:59.023 [main] BDD Automation - I find the home Page
+[INFO ] 2025-10-05 12:20:59.068 [main] BDD Automation - I minimize the flyout window
+[INFO ] 2025-10-05 12:21:01.162 [main] BDD Automation - I click on User Menu
+[INFO ] 2025-10-05 12:21:05.119 [main] BDD Automation - I click on Add User button
+[INFO ] 2025-10-05 12:21:07.250 [main] BDD Automation - I enter firstname in firstname text field
+[INFO ] 2025-10-05 12:21:07.353 [main] BDD Automation - I enter lastname in lastname text field
+[INFO ] 2025-10-05 12:21:07.428 [main] BDD Automation - I enter email in email text field
+[INFO ] 2025-10-05 12:21:07.510 [main] BDD Automation - I enter username in username text field of userpage
+[INFO ] 2025-10-05 12:21:07.599 [main] BDD Automation - I enter password in password text field of userpage
+[INFO ] 2025-10-05 12:21:07.663 [main] BDD Automation - I enter password in retypepassword text field of userpage
+[INFO ] 2025-10-05 12:21:07.726 [main] BDD Automation - I click on create user button in userpage
+[INFO ] 2025-10-05 12:21:11.826 [main] BDD Automation - I find the created user in the user list page
+[INFO ] 2025-10-05 12:21:11.855 [main] BDD Automation - I click on newly created user
+[INFO ] 2025-10-05 12:21:13.941 [main] BDD Automation - I click on Delete User button
+[INFO ] 2025-10-05 12:21:16.073 [main] BDD Automation - I click on OK button in Alert Window
+[INFO ] 2025-10-05 12:21:18.114 [main] BDD Automation - I click on Logout Link
+[INFO ] 2025-10-05 12:21:20.362 [main] BDD Automation - I find the login Page
+[INFO ] 2025-10-05 12:21:20.384 [main] BDD Automation - I close chrome browser
+[INFO ] 2025-10-05 12:21:20.653 [main] BDD Automation - I launch chrome Browser
+[INFO ] 2025-10-05 12:21:22.226 [main] BDD Automation - I navigate application url
+[INFO ] 2025-10-05 12:21:28.221 [main] BDD Automation - I find the login Page
+[INFO ] 2025-10-05 12:21:28.243 [main] BDD Automation - I enter username in username text field
+[INFO ] 2025-10-05 12:21:28.329 [main] BDD Automation - I enter password in password text field
+[INFO ] 2025-10-05 12:21:28.404 [main] BDD Automation - I click on Login Button in login page
+[INFO ] 2025-10-05 12:21:32.493 [main] BDD Automation - I find the home Page
+[INFO ] 2025-10-05 12:21:32.529 [main] BDD Automation - I minimize the flyout window
+[INFO ] 2025-10-05 12:21:34.644 [main] BDD Automation - I find the home Page
+[INFO ] 2025-10-05 12:21:34.682 [main] BDD Automation - I click on Logout Link
+[INFO ] 2025-10-05 12:21:36.901 [main] BDD Automation - I find the login Page
+[INFO ] 2025-10-05 12:21:36.965 [main] BDD Automation - I close chrome browser

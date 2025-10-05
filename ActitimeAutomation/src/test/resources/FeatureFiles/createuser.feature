@@ -2,9 +2,10 @@
 # User Story Name:
 # Testcase Name:
 # Description:
-Feature: Verify Login and Logout functionality
+@Execute
+Feature: Verify Create User functionality
 
-  Scenario: Verify Login Functionality
+  Scenario: Verify Create User Functionality
     Given I launch chrome Browser
     And I navigate application url
     And I find the login Page
