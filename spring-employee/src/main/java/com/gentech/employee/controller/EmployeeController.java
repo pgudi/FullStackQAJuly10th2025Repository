@@ -47,4 +47,22 @@ public class EmployeeController {
         return  new ResponseEntity<>("The Employee with id "+id+" has deleted successfullly!!",HttpStatus.OK);
     }
 
+    @GetMapping("/employees/filterbyjobname")
+    public ResponseEntity<List<EmployeeDto>> getEmployeesByJobName(@RequestParam String jobname)
+    {
+        return new ResponseEntity<>(service.getAllEmployeeByjobName(jobname), HttpStatus.OK);
+    }
+
+    @GetMapping("/employees/filterbycityandstate")
+    public ResponseEntity<List<EmployeeDto>> getEmployeesByCityAndState(@RequestParam String cityname,
+                                                                        @RequestParam String statename)
+    {
+        return new ResponseEntity<>(service.getAllEmployeeByCityNameAndStateName(cityname,statename), HttpStatus.OK);
+    }
+
+    @GetMapping("/employees/filterbyemail")
+    public ResponseEntity<List<EmployeeDto>> getEmployeesByEmailId(@RequestParam String email)
+    {
+        return new ResponseEntity<>(service.getAllEmployeeByEmailIdLike(email), HttpStatus.OK);
+    }
 }

@@ -64,4 +64,23 @@ public class EmployeeServiceImpl implements EmployeeService {
         repository.delete(employee);
 
     }
+
+    @Override
+    public List<EmployeeDto> getAllEmployeeByjobName(String jobName) {
+        return repository.findByJobName(jobName).stream().map((employee -> EmployeeMapper.mapToEmployeeDto(employee)))
+                .collect(Collectors.toList());
+
+    }
+
+    @Override
+    public List<EmployeeDto> getAllEmployeeByCityNameAndStateName(String cityName, String stateName) {
+        return repository.findByCityNameAndStateName(cityName,stateName).stream().map((employee -> EmployeeMapper.mapToEmployeeDto(employee)))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<EmployeeDto> getAllEmployeeByEmailIdLike(String emailId) {
+        return repository.findByEmailIdContaining(emailId).stream().map((employee -> EmployeeMapper.mapToEmployeeDto(employee)))
+                .collect(Collectors.toList());
+    }
 }
