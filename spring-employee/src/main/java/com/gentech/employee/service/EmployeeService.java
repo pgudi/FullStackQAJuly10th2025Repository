@@ -15,4 +15,11 @@ public interface EmployeeService {
     EmployeeDto updateEmployee(Integer id, EmployeeDto employeeDto);
 
     void deleteEmployee(Integer employeeId);
+
+    List<EmployeeDto> getAllEmployeeByjobName(String jobName);
+
+    List<EmployeeDto> getAllEmployeeByCityNameAndStateName(String cityName, String stateName);
+
+    List<EmployeeDto> getAllEmployeeByEmailIdLike(String emailId);
+
 }
