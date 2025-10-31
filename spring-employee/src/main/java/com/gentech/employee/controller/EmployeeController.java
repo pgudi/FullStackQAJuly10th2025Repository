@@ -33,6 +33,18 @@ public class EmployeeController {
         return new ResponseEntity<>(service.getAllEmployee(), HttpStatus.OK);
     }
 
+    @GetMapping("/employees/sorting")
+    public ResponseEntity<List<EmployeeDto>> getAllEmployees(@RequestParam String columnName)
+    {
+        return new ResponseEntity<>(service.getAllEmployee(columnName), HttpStatus.OK);
+    }
+
+    @GetMapping("/employees/pagination")
+    public ResponseEntity<List<EmployeeDto>> getAllEmployees(@RequestParam int pageNumber,@RequestParam int pageSize)
+    {
+        return new ResponseEntity<>(service.getAllEmployee(pageNumber,pageSize), HttpStatus.OK);
+    }
+
     @PutMapping("/employees/{id}")
     public ResponseEntity<EmployeeDto> modifyEmployee(@PathVariable Integer id,
                                                       @RequestBody EmployeeDto employeeDto)
@@ -64,5 +76,19 @@ public class EmployeeController {
     public ResponseEntity<List<EmployeeDto>> getEmployeesByEmailId(@RequestParam String email)
     {
         return new ResponseEntity<>(service.getAllEmployeeByEmailIdLike(email), HttpStatus.OK);
+    }
+
+    @GetMapping("/employees/filterbyjoborcity")
+    public ResponseEntity<List<EmployeeDto>> getEmployeesByJobOrCity(@RequestParam String jobName,
+                                                                     @RequestParam String cityName)
+    {
+        return new ResponseEntity<>(service.getAllEmployeeByJobNameOrCityName(jobName, cityName), HttpStatus.OK);
+    }
+
+    @PutMapping("/employees/updatestatename")
+    public ResponseEntity<Integer> updateEmployeeWithStateName(@RequestParam String stateName,
+                                                               @RequestParam Integer id)
+    {
+        return new ResponseEntity<>(service.updateEmployeeByState(stateName,id), HttpStatus.OK);
     }
 }

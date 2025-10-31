@@ -12,6 +12,10 @@ public interface EmployeeService {
 
     List<EmployeeDto> getAllEmployee();
 
+    List<EmployeeDto> getAllEmployee(int pageNumber, int pageSize);
+
+    List<EmployeeDto> getAllEmployee(String columnName);
+
     EmployeeDto updateEmployee(Integer id, EmployeeDto employeeDto);
 
     void deleteEmployee(Integer employeeId);
@@ -22,4 +26,7 @@ public interface EmployeeService {
 
     List<EmployeeDto> getAllEmployeeByEmailIdLike(String emailId);
 
+    List<EmployeeDto> getAllEmployeeByJobNameOrCityName(String jobName, String cityName);
+
+    Integer updateEmployeeByState(String stateName, Integer id);
 }
