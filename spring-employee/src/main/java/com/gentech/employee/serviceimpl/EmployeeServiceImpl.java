@@ -7,6 +7,9 @@ import com.gentech.employee.mapper.EmployeeMapper;
 import com.gentech.employee.repository.EmployeeRepository;
 import com.gentech.employee.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -36,6 +39,20 @@ public class EmployeeServiceImpl implements EmployeeService {
     public List<EmployeeDto> getAllEmployee() {
 
         return repository.findAll().stream().map((employee -> EmployeeMapper.mapToEmployeeDto(employee)))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<EmployeeDto> getAllEmployee(String columnName) {
+        Sort sort=Sort.by(Sort.Direction.ASC, columnName);
+        return repository.findAll(sort).stream().map((employee -> EmployeeMapper.mapToEmployeeDto(employee)))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<EmployeeDto> getAllEmployee(int pageNumber,int pageSize) {
+        Pageable pageable= PageRequest.of(pageNumber,pageSize);
+        return repository.findAll(pageable).stream().map((employee -> EmployeeMapper.mapToEmployeeDto(employee)))
                 .collect(Collectors.toList());
     }
 
@@ -83,4 +100,17 @@ public class EmployeeServiceImpl implements EmployeeService {
         return repository.findByEmailIdContaining(emailId).stream().map((employee -> EmployeeMapper.mapToEmployeeDto(employee)))
                 .collect(Collectors.toList());
     }
+
+    @Override
+    public List<EmployeeDto> getAllEmployeeByJobNameOrCityName(String jobName, String cityName) {
+        return repository.getEmployeesByJobNameOrCityName(jobName,cityName).stream().map((employee -> EmployeeMapper.mapToEmployeeDto(employee)))
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public Integer updateEmployeeByState(String stateName, Integer id) {
+        return repository.updateEmployeeByStateName(stateName,id);
+    }
+
+
 }
