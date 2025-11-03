@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -16,8 +17,7 @@ public class EmployeeController {
     private EmployeeService service;
 
     @PostMapping("/employees")
-    public ResponseEntity<EmployeeDto> saveEmployee(@RequestBody EmployeeDto employeeDto)
-    {
+    public ResponseEntity<EmployeeDto> saveEmployee(@RequestBody EmployeeDto employeeDto) throws Exception {
         return new ResponseEntity<>(service.createEmployee(employeeDto), HttpStatus.CREATED);
     }
 

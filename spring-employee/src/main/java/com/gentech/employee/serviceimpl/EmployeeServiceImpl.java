@@ -21,8 +21,12 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeRepository repository;
 
     @Override
-    public EmployeeDto createEmployee(EmployeeDto employeeDto) {
+    public EmployeeDto createEmployee(EmployeeDto employeeDto) throws Exception {
         Employee employee= EmployeeMapper.mapToEmployee(employeeDto);
+        if(employee.getEname().length()>=20)
+        {
+            throw new Exception("The Employee name has more than 20 characters, please provide teh Employee name with less than 20 characters");
+        }
         Employee savedEmployee=repository.save(employee);
 
         return EmployeeMapper.mapToEmployeeDto(savedEmployee);

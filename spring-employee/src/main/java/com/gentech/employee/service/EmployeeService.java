@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface EmployeeService {
 
-    EmployeeDto createEmployee(EmployeeDto employeeDto);
+    EmployeeDto createEmployee(EmployeeDto employeeDto) throws Exception;
 
     EmployeeDto getEmployee(Integer id);
 
